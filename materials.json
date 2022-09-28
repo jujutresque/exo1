@@ -1,0 +1,48 @@
+{
+    "id": "1222",
+    "name": "Chrome",
+    "masseVolumique": [
+        {
+            "data": [
+                {
+                    "Temperature": [
+                        "23",
+                        "35",
+                        "200"
+                    ]
+                },
+                {
+                    "Densite": [
+                        "1.11",
+                        "1.12",
+                        "1.113"
+                    ]
+                }
+            ],
+            "indiceQualite": []
+        }
+    ],
+    "coeffPoisson": [
+        {
+            "data": [
+                {
+                    "Temperature": [
+                        23,
+                        35,
+                        200
+                    ]
+                },
+                {
+                    "nuX": [
+                        3.25,
+                        4.65,
+                        5.3
+                    ]
+                }
+            ],
+            "indiceQualite": []
+        }
+    ],
+    "error": "",
+    "statut": "OK"
+}
