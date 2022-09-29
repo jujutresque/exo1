@@ -58,18 +58,27 @@ async function creerTableMateriel(url, idProgram, bool){
                     if (i === 0 && j === 1) {
                         td.setAttribute('colSpan', '3');
                         td.textContent = "data";
+                        td.style.fontWeight="bold";
+                        td.style.backgroundColor="grey";
                     }
                     if (i === 0 && j === 0) {
                         td.textContent = material.name;
+                        td.style.fontWeight="bold";
                     }
                     if (i === 1 && j === 0) {
                         td.textContent = "Temperature";
+                        td.style.fontWeight="bold";
+                        td.style.backgroundColor="grey";
                     }
                     if (i === 2 && j === 0) {
                         td.textContent = "Densite";
+                        td.style.fontWeight="bold";
+                        td.style.backgroundColor="grey";
                     }
                     if (i === 3 && j === 0) {
                         td.textContent = "nuX";
+                        td.style.fontWeight="bold";
+                        td.style.backgroundColor="grey";
                     }
                     if(i === 1 && j > 0){
                         td.textContent = material.masseVolumique[0].data[0].Temperature[j-1];
@@ -96,11 +105,11 @@ var tableMatCreer = false;
 
 /*
 On vérifie si l'utilisateur clique sur l'une des pièces et s'il le fait on commence
- la fonction qui permet de créer le deuxième tableau.
+la fonction qui permet de créer le deuxième tableau.
 */
 const colloneTable = document.getElementsByTagName("tbody");
 const caseClicker = e => { 
-  console.log(e.target.id);
+  //console.log(e.target.id);
   creerTableMateriel("./materials.json", e.target.id, tableMatCreer);
   tableMatCreer = true;
 }
